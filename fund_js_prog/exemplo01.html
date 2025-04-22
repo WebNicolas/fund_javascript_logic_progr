@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo01-JavaScript</title>
+    <link rel="shortcut icon" href="./assets/aurora-boreal-canada.png"type="image/x-icon">
+</head>
+<body>
+  <h1>Vamos quebrar essa Maldição😡</h1>  
+  <p>Meu primeiro código em JavaScript😀</p>
+
+<p id="maldicao"></p>
+
+  <script>
+    //camelcase - Normalização para java script
+    window.alert('vamos fazer uma maldição!😡😏🙄')
+    let nomeUsuario = prompt('qual é o seu nome...')
+    alert('vamos la !')
+    
+
+    let numUm = prompt ('Digite o ano em que voce esta');
+    let numDois = prompt('Digite sua data de nascimento');
+
+    let numeroUm = Number(numUm);
+    let numeroDois = Number(numDois);
+
+    let result = numeroUm + numDois;
+
+
+    // alert("A soma é: + result");
+    document.getElementById("maldicao").innerHTML ='Esse é o resultado da maldicao' +result;
+    
+  </script>
+</body>
+
+</html>
