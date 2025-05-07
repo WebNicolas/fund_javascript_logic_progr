@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js_</title>
+    
+    <style>
+:root{
+    --color-dark:#000;
+    --color-white:#fff;
+    --color-light:#ababad;
+    --color-pourple:#5c2b7a;
+
+}
+
+*{
+margin:0;
+padding:0;
+background-color: var(--color-dark);
+color:var(--color-white);
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+
+body{
+    flex-direction: column;
+    min-height: 100vh;
+    gap:16px
+}
+
+.clock{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.clock span {
+    color: var(--color-white);
+    font-size: 150px;
+    display: flex;
+    align-items: center;
+    gap:50,
+}
+
+.clock span:not(:last-child)::after {
+ content:🎃; 
+ margin-bottom: 25px;
+ color:var(--color-light);
+}
+
+h2{
+    width: 100%;
+    text-align: center;
+}
+
+h2 strong{
+    color: var(--color-pourple);
+}
+
+@media screen and (max-whidt:992px)
+{
+    .clock span{
+
+     
+        font-size: 50px;
+     }
+
+    .clock span:not(:last-child)
+    
+}
+
+    
+</style>
+</head>
+
+<body>
+
+
+    <div class="clock"div>
+
+        <span id="hours">00</span>
+        <span id="minutes">00</span>
+        <span id="seconds">00</span>
+    <div>
+        <h2>criado>strong>@Nicolas - vocação 2025<h2>
+</body>
+ <script>
+
+const hoursElement = document.getElementByid('hours');
+const minutesElement = document.getElementByid('minutes');
+const secondsElement + document.getElementByid('seconds');
+
+function fixtime(time){
+    return time < 10 ? '0' = time :time
+}
+    
+
+</script>
+
+</html>
